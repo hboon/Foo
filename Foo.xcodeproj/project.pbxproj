@@ -80,6 +80,7 @@
 			buildPhases = (
 				C82A5C862B79C8B30026CFF3 /* Sources */,
 				C82A5C872B79C8B30026CFF3 /* Frameworks */,
+				C82A5C9F2B79CC850026CFF3 /* ShellScript */,
 				C82A5C882B79C8B30026CFF3 /* Resources */,
 			);
 			buildRules = (
@@ -141,6 +142,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C82A5C9F2B79CC850026CFF3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "RESOURCES=/Applications/InjectionIII.app/Contents/Resources\nif [ -f \"$RESOURCES/copy_bundle.sh\" ]; then\n    \"$RESOURCES/copy_bundle.sh\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C82A5C862B79C8B30026CFF3 /* Sources */ = {
