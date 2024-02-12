@@ -11,6 +11,7 @@
 		C82A5C902B79C8B30026CFF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82A5C8F2B79C8B30026CFF3 /* ContentView.swift */; };
 		C82A5C922B79C8B40026CFF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82A5C912B79C8B40026CFF3 /* Assets.xcassets */; };
 		C82A5C952B79C8B40026CFF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82A5C942B79C8B40026CFF3 /* Preview Assets.xcassets */; };
+		C82A5C9E2B79C9900026CFF3 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C82A5C9D2B79C9900026CFF3 /* Inject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82A5C9E2B79C9900026CFF3 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = Foo;
+			packageProductDependencies = (
+				C82A5C9D2B79C9900026CFF3 /* Inject */,
+			);
 			productName = Foo;
 			productReference = C82A5C8A2B79C8B30026CFF3 /* Foo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = C82A5C812B79C8B30026CFF3;
+			packageReferences = (
+				C82A5C9C2B79C9900026CFF3 /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = C82A5C8B2B79C8B30026CFF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C82A5C9C2B79C9900026CFF3 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C82A5C9D2B79C9900026CFF3 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C82A5C9C2B79C9900026CFF3 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C82A5C822B79C8B30026CFF3 /* Project object */;
 }
